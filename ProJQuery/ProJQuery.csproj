@@ -61,6 +61,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Default.html" />
+    <Content Include="Ch05\05.01.html" />
     <Content Include="Content\Resources\astor.png" />
     <Content Include="Content\Resources\border.png" />
     <Content Include="Content\Resources\carnation.png" />
@@ -77,7 +79,6 @@
     <Content Include="Content\Resources\rose.png" />
     <Content Include="Content\Resources\snowdrop.png" />
     <Content Include="Content\styles.css" />
-    <Content Include="Default.html" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />

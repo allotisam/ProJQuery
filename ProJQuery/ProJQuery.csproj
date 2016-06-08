@@ -61,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ch05\05.01.html" />
     <Content Include="Content\Resources\astor.png" />
     <Content Include="Content\Resources\border.png" />
     <Content Include="Content\Resources\carnation.png" />

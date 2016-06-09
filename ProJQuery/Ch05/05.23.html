@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Default Page</title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/Content/styles.css" />
+    <script type="text/javascript">
+        // More Sophisticated Chaining Example
+        $(document).ready(function () {
+
+            // 1. all label colors are changed to blue
+            // 2. all labels font-size except 'snowdrop' is changed to 2em
+            // 3. all inputs font-size except 'rose' is changed to 2em
+            $('label').css('color', 'blue').add("input[name!='rose']").filter("[for!='snowdrop']").css('font-size', '2em');
+
+
+            // exactly same effects achieved with javascript below... so much verbose
+
+            //var elems = document.getElementsByTagName('label');
+            //for (var i = 0; i < elems.length; i++) {
+            //    elems[i].style.color = 'blue';
+            //    if (elems[i].getAttribute('for') != 'snowdrop') {
+            //        elems[i].style.fontSize = '2em';
+            //    }
+            //}
+
+            //elems = document.getElementsByTagName('input');
+            //for (var i = 0; i < elems.length; i++) {
+            //    if (elems[i].getAttribute('name') != 'rose') {
+            //        elems[i].style.fontSize = '2em';
+            //    }
+            //}
+        });
+    </script>
+</head>
+<body>
+    <h1>Jacqui's Flower Shop</h1>
+    <form method="post">
+        <div id="oblock">
+            <div class="dtable">
+                <div id="row1" class="drow">
+                    <div class="dcell">
+                        <img src="/Content/Resources/astor.png" />
+                        <label for="astor">Astor:</label>
+                        <input name="astor" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/daffodil.png" />
+                        <label for="daffodil">Daffodil:</label>
+                        <input name="daffodil" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/rose.png" />
+                        <label for="rose">Rose:</label>
+                        <input name="rose" value="0" required />
+                    </div>
+                </div>
+                <div id="row2" class="drow">
+                    <div class="dcell">
+                        <img src="/Content/Resources/peony.png" />
+                        <label for="peony">Peony:</label>
+                        <input name="peony" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/primula.png" />
+                        <label for="primula">Primula</label>
+                        <input name="primula" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/snowdrop.png" />
+                        <label for="snowdrop">Snowdrop:</label>
+                        <input name="snowdrop" value="0" required />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="buttonDiv">
+            <button type="submit">Place Order</button>
+        </div>
+    </form>
+</body>
+</html>

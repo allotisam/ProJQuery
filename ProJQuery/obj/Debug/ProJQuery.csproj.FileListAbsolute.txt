@@ -4,3 +4,9 @@ C:\Users\aLLoTiSaM\Documents\Visual Studio 2015\Projects\ProJQuery\ProJQuery\bin
 C:\Users\aLLoTiSaM\Documents\Visual Studio 2015\Projects\ProJQuery\ProJQuery\obj\Debug\ProJQuery.csprojResolveAssemblyReference.cache
 C:\Users\aLLoTiSaM\Documents\Visual Studio 2015\Projects\ProJQuery\ProJQuery\obj\Debug\ProJQuery.dll
 C:\Users\aLLoTiSaM\Documents\Visual Studio 2015\Projects\ProJQuery\ProJQuery\obj\Debug\ProJQuery.pdb
+C:\Users\jeong.park\Documents\Visual Studio 2015\Projects\ProJQuery\ProJQuery\bin\ProJQuery.dll.config
+C:\Users\jeong.park\Documents\Visual Studio 2015\Projects\ProJQuery\ProJQuery\bin\ProJQuery.dll
+C:\Users\jeong.park\Documents\Visual Studio 2015\Projects\ProJQuery\ProJQuery\bin\ProJQuery.pdb
+C:\Users\jeong.park\Documents\Visual Studio 2015\Projects\ProJQuery\ProJQuery\obj\Debug\ProJQuery.csprojResolveAssemblyReference.cache
+C:\Users\jeong.park\Documents\Visual Studio 2015\Projects\ProJQuery\ProJQuery\obj\Debug\ProJQuery.dll
+C:\Users\jeong.park\Documents\Visual Studio 2015\Projects\ProJQuery\ProJQuery\obj\Debug\ProJQuery.pdb

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Default Page</title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/Content/styles.css" />
+    <script type="text/javascript">
+        // locating the Index of an HTMLElement
+
+        $(document).ready(function () {
+
+            var elems = $('body *');
+
+            console.log(elems);
+
+            // find an index using the basic DOM API
+            var index = elems.index(document.getElementById("oblock"));
+            console.log("Index using DOM element is: " + index);
+
+            // find an index using another jQuery object
+            index = elems.index($('#oblock'));
+            console.log("Inidex using jQuery object is: " + index);
+        });
+
+    </script>
+</head>
+<body>
+    <h1>Jacqui's Flower Shop</h1>
+    <form method="post">
+        <div id="oblock">
+            <div class="dtable">
+                <div id="row1" class="drow">
+                    <div class="dcell">
+                        <img src="/Content/Resources/astor.png" />
+                        <label for="astor">Astor:</label>
+                        <input name="astor" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/daffodil.png" />
+                        <label for="daffodil">Daffodil:</label>
+                        <input name="daffodil" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/rose.png" />
+                        <label for="rose">Rose:</label>
+                        <input name="rose" value="0" required />
+                    </div>
+                </div>
+                <div id="row2" class="drow">
+                    <div class="dcell">
+                        <img src="/Content/Resources/peony.png" />
+                        <label for="peony">Peony:</label>
+                        <input name="peony" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/primula.png" />
+                        <label for="primula">Primula</label>
+                        <input name="primula" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/snowdrop.png" />
+                        <label for="snowdrop">Snowdrop:</label>
+                        <input name="snowdrop" value="0" required />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="buttonDiv">
+            <button type="submit">Place Order</button>
+        </div>
+    </form>
+</body>
+</html>

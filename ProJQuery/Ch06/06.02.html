@@ -6,14 +6,20 @@
     <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/Content/styles.css" />
     <script type="text/javascript">
-        // using the add Method
+        // Reducing the Selection Based on Element Position
         $(document).ready(function () {
             
-            var labelElems = document.getElementsByTagName("label");
-            var jq = $('img[src*=daffodil]');
+            var jq = $('label');
 
-            $('img:even').add('img[src*=primula]').add(jq).add(labelElems).css("border", "thick double red");
+            // select and operate on the first element
+            jq.first().css('border', 'thick double red');
 
+            // select and operate on the last element
+            jq.last().css('border', 'thick double green');
+
+            // select and operate on an element by index
+            jq.eq(2).css('border', 'thick double black');
+            jq.eq(-2).css('border', 'thick double black');
         });
     </script>
 </head>

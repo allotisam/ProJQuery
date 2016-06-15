@@ -6,14 +6,11 @@
     <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/Content/styles.css" />
     <script type="text/javascript">
-        // using the add Method
+        // Uinsg the END method... goes back to previous selection
         $(document).ready(function () {
             
-            var labelElems = document.getElementsByTagName("label");
-            var jq = $('img[src*=daffodil]');
-
-            $('img:even').add('img[src*=primula]').add(jq).add(labelElems).css("border", "thick double red");
-
+            $('label').first().css('border', 'thick solid blue')
+            .end().not('[for=snowdrop]').css('font-size', '2em');
         });
     </script>
 </head>

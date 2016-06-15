@@ -6,14 +6,12 @@
     <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/Content/styles.css" />
     <script type="text/javascript">
-        // using the add Method
+        // Using the HAS method
         $(document).ready(function () {
-            
-            var labelElems = document.getElementsByTagName("label");
-            var jq = $('img[src*=daffodil]');
+            $('div.dcell').has('img[src*=astor]').css('border', 'thick solid red');
 
-            $('img:even').add('img[src*=primula]').add(jq).add(labelElems).css("border", "thick double red");
-
+            var jq = $('[for*=p]');
+            $('div.dcell').has(jq).css('border', 'thick solid blue');
         });
     </script>
 </head>

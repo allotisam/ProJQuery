@@ -61,8 +61,17 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ch06\06.10.html" />
+    <Content Include="Ch06\06.09.html" />
+    <Content Include="Ch06\06.08.html" />
+    <Content Include="Ch06\06.07.html" />
+    <Content Include="Ch06\06.06.html" />
+    <Content Include="Ch06\06.05.html" />
+    <Content Include="Ch06\06.04.html" />
+    <Content Include="Ch06\06.03.html" />
+    <Content Include="Ch06\06.02.html" />
+    <Content Include="Ch06\06.01.html" />
     <Content Include="Default.html" />
-    <Content Include="Ch05\05.01.html" />
     <Content Include="Content\Resources\astor.png" />
     <Content Include="Content\Resources\border.png" />
     <Content Include="Content\Resources\carnation.png" />

@@ -6,14 +6,16 @@
     <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/Content/styles.css" />
     <script type="text/javascript">
-        // using the add Method
+        // Using the IS method .... testing the selection
         $(document).ready(function () {
             
-            var labelElems = document.getElementsByTagName("label");
-            var jq = $('img[src*=daffodil]');
+            var isResult = $('img').is(function (index) {
+                return this.getAttribute('src') == '/Content/Resources/rose.png';
+            });
 
-            $('img:even').add('img[src*=primula]').add(jq).add(labelElems).css("border", "thick double red");
-
+            var resultStr = 'Does Image Selection Contain Rose.png? ' + (isResult ? "Yes" : "No");
+            console.log(resultStr);
+            
         });
     </script>
 </head>

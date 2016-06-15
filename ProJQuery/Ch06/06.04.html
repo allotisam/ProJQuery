@@ -6,14 +6,30 @@
     <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/Content/styles.css" />
     <script type="text/javascript">
-        // using the add Method
+        // Specifying a Filter (filter = select the ones specified in the 'filter')
         $(document).ready(function () {
-            
-            var labelElems = document.getElementsByTagName("label");
-            var jq = $('img[src*=daffodil]');
 
-            $('img:even').add('img[src*=primula]').add(jq).add(labelElems).css("border", "thick double red");
+            // remove elements whose src attribute contains the letter 's'... fyi they all contain 's' though 
+            var filteredImg = $('img').filter('[src*=s]');
+            console.log(filteredImg);
+            filteredImg.css('border', 'thick double red');
 
+            // remove elements that dont' contain the letter 'p'
+            var jq = $('[for*=p]');
+            $('label').filter(jq).css('color', 'blue');
+
+            // remove elements that are not the specified element
+            var elem = document.getElementsByTagName('label')[1];
+            $('label').filter(elem).css('font-size', '3em');
+
+            // remove elements using a function
+            $('img').filter(function (index) {
+                return this.getAttribute('src') == '/Content/Resources/peony.png' || index == 4;
+            }).css('border', 'thick solic green');
+
+            var selectedImage = $('img').filter(function (index) {
+                return this.getAttribute('src') == '/Content/Resources/peony.png' || index == 4;
+            });
         });
     </script>
 </head>

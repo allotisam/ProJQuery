@@ -6,14 +6,19 @@
     <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/Content/styles.css" />
     <script type="text/javascript">
-        // using the add Method
+        // Using the NOT function
         $(document).ready(function () {
-            
-            var labelElems = document.getElementsByTagName("label");
-            var jq = $('img[src*=daffodil]');
+            $('img').not('[src*=z]').css('border', 'thick double red');
 
-            $('img:even').add('img[src*=primula]').add(jq).add(labelElems).css("border", "thick double red");
+            var jq = $('[for*=p]');
+            $('label').not(jq).css('color', 'blue');
 
+            var elem = document.getElementsByTagName('label')[1];
+            $('label').not(elem).css('font-size', '2em');
+
+            var img = $('img').not(function (index) {
+                return this.getAttribute('src') == '/Content/Resources/peony.png' || index == 4;
+            }).css('border', 'thick solid green');
         });
     </script>
 </head>

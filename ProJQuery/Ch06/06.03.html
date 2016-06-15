@@ -6,14 +6,13 @@
     <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/Content/styles.css" />
     <script type="text/javascript">
-        // using the add Method
+        // Using the Slice Method
         $(document).ready(function () {
-            
-            var labelElems = document.getElementsByTagName("label");
-            var jq = $('img[src*=daffodil]');
 
-            $('img:even').add('img[src*=primula]').add(jq).add(labelElems).css("border", "thick double red");
+            var jq = $('label');
 
+            jq.slice(0, 2).css('border', 'thick double black');     // slice(inclusive, exclusive)
+            jq.slice(4).css('border', 'thick solid red');           // slice(inclusive)..all the way to end
         });
     </script>
 </head>

@@ -6,14 +6,10 @@
     <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
     <link type="text/css" rel="stylesheet" href="/Content/styles.css" />
     <script type="text/javascript">
-        // using the add Method
+        // using the andSelf method
         $(document).ready(function () {
             
-            var labelElems = document.getElementsByTagName("label");
-            var jq = $('img[src*=daffodil]');
-
-            $('img:even').add('img[src*=primula]').add(jq).add(labelElems).css("border", "thick double red");
-
+            $('div.dcell').children('img').andSelf().css('border', 'thick solid blue');
         });
     </script>
 </head>

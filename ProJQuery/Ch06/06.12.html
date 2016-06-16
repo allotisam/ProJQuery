@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Default Page</title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/Content/styles.css" />
+    <script type="text/javascript">
+        // using the FIND() method to create an intersection
+        $(document).ready(function () {
+
+            var jq = $('label').filter('[for*=p]').not('[for=peony]');
+            $('div.drow').find(jq).css('border', 'thick solid blue');
+
+        });
+    </script>
+</head>
+<body>
+    <h1>Jacqui's Flower Shop</h1>
+    <form method="post">
+        <div id="oblock">
+            <div class="dtable">
+                <div id="row1" class="drow">
+                    <div class="dcell">
+                        <img src="/Content/Resources/astor.png" />
+                        <label for="astor">Astor:</label>
+                        <input name="astor" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/daffodil.png" />
+                        <label for="daffodil">Daffodil:</label>
+                        <input name="daffodil" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/rose.png" />
+                        <label for="rose">Rose:</label>
+                        <input name="rose" value="0" required />
+                    </div>
+                </div>
+                <div id="row2" class="drow">
+                    <div class="dcell">
+                        <img src="/Content/Resources/peony.png" />
+                        <label for="peony">Peony:</label>
+                        <input name="peony" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/primula.png" />
+                        <label for="primula">Primula</label>
+                        <input name="primula" value="0" required />
+                    </div>
+                    <div class="dcell">
+                        <img src="/Content/Resources/snowdrop.png" />
+                        <label for="snowdrop">Snowdrop:</label>
+                        <input name="snowdrop" value="0" required />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="buttonDiv">
+            <button type="submit">Place Order</button>
+        </div>
+    </form>
+</body>
+</html>
